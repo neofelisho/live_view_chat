@@ -32,10 +32,24 @@ Creating live_view_chat_postgres_1 ... done
 
 ## Generate the Boilerplate Codes
 
-Users domain:
+Context of Users:
 
 ```shell script
 $ mix phx.gen.live Users User users name:string password_hash:string
+```
+
+Context of Chats:
+
+```shell script
+$ mix phx.gen.live Chats Room rooms name:string
+* creating lib/live_view_chat_web/live/room_live/show.ex
+...
+```
+
+```shell script
+mix phx.gen.live Chats Message messages chat_id:references:chats user_id:references:users content:string
+You are generating into an existing context.
+...
 ```
 
 ## Learn more
