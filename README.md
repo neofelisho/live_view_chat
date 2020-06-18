@@ -30,6 +30,14 @@ Creating network "live_view_chat_default" with the default driver
 Creating live_view_chat_postgres_1 ... done
 ```
 
+## Generate the Boilerplate Codes
+
+Users domain:
+
+```shell script
+$ mix phx.gen.live Users User users name:string password_hash:string
+```
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
